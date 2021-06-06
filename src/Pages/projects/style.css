@@ -1,0 +1,28 @@
+.project-container-1 {
+  background-image: linear-gradient(rgb(250, 250, 255), #eef0f2, #ecebe4);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container-1 h1 {
+  align-self: center;
+  margin-top: 12vh;
+}
+
+.project-container-2 {
+  align-self: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.project-list {
+  width: 60%;
+}
+
+img {
+  width: 684px;
+  height: auto;
+}
