@@ -12,7 +12,7 @@ class Home extends React.Component {
         <div id="home-parent">
           <div id="home-text">
             <h1 className="title is-1 is-spaced">Olá, eu sou o Lucas</h1>
-            <h2 className="subtitle is-4 home-describe">
+            <h2 className="subtitle is-5 home-describe">
               Sou de Minas Gerais, Brasil e estudo desenvolvimento web na Trybe.
               Tambem estudei Engenharia Mecânica na Universidade Federal de São João del Rei -UFSJ
               Aqui você pode conhecer um pouco mais da minha trajetória e meus projetos, desenvolvidos

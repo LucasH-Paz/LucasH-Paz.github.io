@@ -33,3 +33,7 @@
   height: 500px;
   border-radius: 50%;
 }
+
+article {
+  height: fit-content;
+}

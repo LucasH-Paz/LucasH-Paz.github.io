@@ -14,7 +14,7 @@ class About extends React.Component {
           <article>
             <h1 className="title is-1 is-spaced">Sobre Mim</h1>
             <br />
-            <p className="subtitle is-4">
+            <p className="subtitle">
               {`Nasci em Barroso MG, tenho ${year - 1997} anos `}
                e estou estudando desenvolvimento web na Trybe. Aqui estou aprendendo ferramentas
                incríveis como
@@ -24,7 +24,7 @@ class About extends React.Component {
                Sempre adorei aprender coisas
                novas e principalmente ficar por dentro das novas tecnologias!
             </p>
-            <p className="subtitle is-4">
+            <p className="subtitle">
               Me interesso muito por desenvolvimento web front-end e back-end, gosto de desafios
                que estimulam
               minha criatividade e que possam ser resolvidos em grupo. Amo viajar 

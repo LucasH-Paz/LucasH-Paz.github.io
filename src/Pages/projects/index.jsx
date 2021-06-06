@@ -36,13 +36,15 @@ class Projects extends React.Component {
           <Header />
           <h1 className="title is-1">Projetos</h1>
           <div className="project-container-2">
-            <div className="select is-large">
-              <select onChange={this.handleChange}>
-                <option value="all">Todos</option>
-                <option value="front-end">Front-End</option>
-                <option value="back-end">Back-End</option>
-              </select>
-            </div>
+            <label className="label is-large">{`Filtrar  `}
+              <div className="select is-large">
+                <select onChange={this.handleChange}>
+                  <option value="all">Todos</option>
+                  <option value="front-end">Front-End</option>
+                  <option value="back-end">Back-End</option>
+                </select>
+              </div>
+            </label>
             <div className="project-list content">
               {
                 projects.length === 0
