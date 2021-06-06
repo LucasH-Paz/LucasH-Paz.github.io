@@ -1,0 +1,51 @@
+#contact-parent {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(250, 250, 255), #eef0f2, #ecebe4, #daddd8);
+  height: 100vh;
+  justify-content: center;
+}
+
+.title {
+  align-self: center;
+  /* margin-top: 100px; */
+}
+
+.icons {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  align-self: center;
+  font-size: 12vh;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.icons .fa-linkedin {
+  color: rgb(14, 118, 168);
+}
+
+.icons .fa-github {
+  color: black;
+}
+
+.icons .fa-instagram {
+  background: -webkit-linear-gradient(
+    #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737,
+    #FCAF45, #FFDC80
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icons .fa-envelope {
+  color: #2680c0;
+}
+
+#contact-parent .content {
+  align-self: center;
+  width: 60%;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
