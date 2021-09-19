@@ -72,6 +72,12 @@
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
   }
+
+  .show{
+    right: 0;
+    width: 0;
+    padding: 0;
+  }
 }
 
 .active::after{
@@ -82,13 +88,6 @@
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
-}
-
-/*=== Show menu ===*/
-.show{
-  right: 0;
-  width: 0;
-  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
