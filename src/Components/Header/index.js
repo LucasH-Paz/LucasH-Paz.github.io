@@ -1,13 +1,20 @@
 import React from 'react';
 import './styles.css';
 
-const navOptions = ['Home', 'About', 'Skills', 'Work', 'Contact'];
+const navOptions = ['About', 'Skills', 'Work', 'Contact'];
 
-const toggleOpitions = ({ target }) => {
-  const element = target.parentElement.previousElementSibling.style;
-  return element.display === 'none'
-  ? element.display = 'block'
-  : element.display = 'none';
+const showMenuCntl = () => {
+  const nav = document.getElementById('nav-menu');
+  nav.classList.toggle('show');
+}
+
+const linkAction = ({ target }) => {
+  const navLinks = document.querySelectorAll('.nav__link');
+  navLinks.forEach(link => link.classList.remove('active'));
+  target.classList.add('active');
+
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.remove('show');
 };
 
 function Header() {
@@ -17,10 +24,17 @@ function Header() {
         <div>
           <a href="#xablau" className="nav__logo">Lucas</a>
         </div>
-        <div className="nav__menu" id="nav-menu">
+        <div className="nav__menu show" id="nav-menu">
           <ul className="nav__list">
-            { navOptions.map( option => (
-              <li className="nav__item" key={option}>
+            <li className="nav__item" onClick={ linkAction }>
+              <a href="#Home" className="nav__link active">Home</a>
+            </li>
+            {navOptions.map(option => (
+              <li
+                className="nav__item"
+                key={option}
+                onClick={ linkAction }
+              >
                 <a href={`#${option}`} className="nav__link">{option}</a>
               </li>
             ))}
@@ -29,7 +43,7 @@ function Header() {
         <div
           className="nav__toggle"
           id="nav-toggle"
-          onClick={ (e) => toggleOpitions(e) }
+          onClick={() => showMenuCntl()}
         >
           <i className='bx bx-menu'></i>
         </div>
