@@ -26,14 +26,14 @@ function Header() {
         </div>
         <div className="nav__menu show" id="nav-menu">
           <ul className="nav__list">
-            <li className="nav__item" onClick={ linkAction }>
+            <li className="nav__item" onClick={linkAction}>
               <a href="#Home" className="nav__link active">Home</a>
             </li>
             {navOptions.map(option => (
               <li
                 className="nav__item"
                 key={option}
-                onClick={ linkAction }
+                onClick={linkAction}
               >
                 <a href={`#${option}`} className="nav__link">{option}</a>
               </li>

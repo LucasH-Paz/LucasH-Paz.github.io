@@ -9,6 +9,8 @@
 :root{
   --first-color: #3c6e71;
   --second-color: #284b63;
+  --bright-color: #ffffff;
+  --text-color: #353535;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -22,7 +24,7 @@
   :root{
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.2rem;
   }
 }
 
@@ -55,7 +57,7 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  color: var(--text-color);
 }
 h1,h2,p{
   margin: 0;
@@ -113,4 +115,16 @@ img{
     width: 80px;
     top: 3rem;
   }
+}
+
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+}
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
