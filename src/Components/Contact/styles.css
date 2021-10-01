@@ -1,0 +1,28 @@
+#Contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 70vw;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.field {
+  width: 60%;
+}
+
+#Contact button {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 769px) {
+  #Contact {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: justify;
+  }
+  .field {
+    width: 100%;
+  }
+}

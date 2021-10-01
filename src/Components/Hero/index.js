@@ -11,7 +11,7 @@ function Hero() {
           <span className="home__title-color"> Lucas</span>
           <br />Web Developer
         </h1>
-        <a href="#Contact" className="button">Contact</a>
+        <a href="#Contact" className="Button">Contact</a>
       </div>
     </section>
   );
