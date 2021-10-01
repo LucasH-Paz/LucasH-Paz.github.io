@@ -66,7 +66,6 @@ const Skills = () => {
       <h2 className="section-title about-title">Skills</h2>
       <div>
         <div className="content-cntl-skills">
-          <h2 className="about__subtitle">My programing skills</h2>
           <p>
             In this section you can check some of the languages and tools I've been working with.
             I'm always learning new things, so, even if you do not see what your looking on this list,
