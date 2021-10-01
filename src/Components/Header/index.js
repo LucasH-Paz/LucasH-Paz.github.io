@@ -13,8 +13,7 @@ const linkAction = ({ target }) => {
   navLinks.forEach(link => link.classList.remove('active'));
   target.classList.add('active');
 
-  const navMenu = document.getElementById('nav-menu');
-  navMenu.classList.remove('show');
+  showMenuCntl();
 };
 
 function Header() {
