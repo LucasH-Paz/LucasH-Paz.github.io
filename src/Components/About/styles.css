@@ -6,7 +6,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - var(--header-height));
+  /* height: calc(fi - var(--header-height)); */
   align-items: center;
   margin: auto 0;
   text-align: justify;
@@ -17,7 +17,6 @@
   flex-direction: row;
   max-width: 70%;
   gap: 5rem;
-  height: 80%;
   margin-top: 2rem;
 }
 
@@ -28,7 +27,7 @@
 
 .about-img > img {
   /* border-radius: 70% 30% 70% 30% / 60% 40% 60% 40%; */
-  border-radius: 50%;
+  border-radius: 1rem;
   box-shadow: -2em 1.5rem 0 var(--first-color);
 }
 

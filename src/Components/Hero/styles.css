@@ -1,16 +1,16 @@
 #Home {
   background: url('../../img/background.jpeg') no-repeat fixed center;
   background-size: cover;
-  height: 100vh;
   width: 100vw;
   height: calc(100vh - 3rem);
   color: var(--bright-color);
+  margin-top: 3rem;
 }
 
 .container-header {
   background-image: linear-gradient(rgba(12, 22, 29, 0.835), rgba(31, 58, 59, 0.843));
   height: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-flow: column;
   align-items: center;

@@ -1,0 +1,49 @@
+.skills-galery  img:hover {
+  filter: grayscale(0);
+}
+
+#Skills > div {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.content-cntl-skills {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.skills-galery {
+  display: flex;
+  gap: 2rem;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 70%;
+}
+
+.skills-galery img {
+  height: 6rem;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-galery {
+    gap: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: fit-content;
+  }
+
+  .skills-galery img {
+    height: 6rem;
+    width: 6rem;
+    filter: grayscale(0);
+  }
+}
